@@ -1,0 +1,127 @@
+Init!
+INFO - Creating I2C bus
+INFO - Create additional PINs
+INFO - Create SPI bus
+INFO - Wrap SPI bus in a SPI DMA
+INFO - Display intialization took 377 millisecond
+INFO - DHT12 Read Loop
+INFO - offset = 262  x = 3    y = 4   off = 262..264
+INFO - offset = 264  x = 4    y = 4   off = 264..266
+INFO - offset = 266  x = 5    y = 4   off = 266..268
+INFO - offset = 268  x = 6    y = 4   off = 268..270
+INFO - offset = 270  x = 7    y = 4   off = 270..272
+INFO - offset = 272  x = 8    y = 4   off = 272..274
+INFO - offset = 274  x = 9    y = 4   off = 274..276
+INFO - offset = 276  x = 10    y = 4   off = 276..278
+INFO - offset = 332  x = 6    y = 5   off = 332..334
+INFO - offset = 334  x = 7    y = 5   off = 334..336
+INFO - offset = 396  x = 6    y = 6   off = 396..398
+INFO - offset = 398  x = 7    y = 6   off = 398..400
+INFO - offset = 460  x = 6    y = 7   off = 460..462
+INFO - offset = 462  x = 7    y = 7   off = 462..464
+INFO - offset = 524  x = 6    y = 8   off = 524..526
+INFO - offset = 526  x = 7    y = 8   off = 526..528
+INFO - offset = 588  x = 6    y = 9   off = 588..590
+INFO - offset = 590  x = 7    y = 9   off = 590..592
+INFO - offset = 652  x = 6    y = 10   off = 652..654
+INFO - offset = 654  x = 7    y = 10   off = 654..656
+INFO - offset = 716  x = 6    y = 11   off = 716..718
+INFO - offset = 718  x = 7    y = 11   off = 718..720
+INFO - offset = 780  x = 6    y = 12   off = 780..782
+INFO - offset = 782  x = 7    y = 12   off = 782..784
+INFO - offset = 844  x = 6    y = 13   off = 844..846
+INFO - offset = 846  x = 7    y = 13   off = 846..848
+INFO - offset = 908  x = 6    y = 14   off = 908..910
+INFO - offset = 910  x = 7    y = 14   off = 910..912
+INFO - offset = 972  x = 6    y = 15   off = 972..974
+INFO - offset = 974  x = 7    y = 15   off = 974..976
+INFO - offset = 1036  x = 6    y = 16   off = 1036..1038
+INFO - offset = 1038  x = 7    y = 16   off = 1038..1040
+INFO - offset = 282  x = 13    y = 4   off = 282..284
+INFO - offset = 284  x = 14    y = 4   off = 284..286
+INFO - offset = 286  x = 15    y = 4   off = 286..288
+INFO - offset = 288  x = 16    y = 4   off = 288..290
+INFO - offset = 290  x = 17    y = 4   off = 290..292
+INFO - offset = 292  x = 18    y = 4   off = 292..294
+INFO - offset = 294  x = 19    y = 4   off = 294..296
+INFO - offset = 296  x = 20    y = 4   off = 296..298
+INFO - offset = 346  x = 13    y = 5   off = 346..348
+INFO - offset = 348  x = 14    y = 5   off = 348..350
+INFO - offset = 410  x = 13    y = 6   off = 410..412
+INFO - offset = 412  x = 14    y = 6   off = 412..414
+INFO - offset = 474  x = 13    y = 7   off = 474..476
+INFO - offset = 476  x = 14    y = 7   off = 476..478
+INFO - offset = 538  x = 13    y = 8   off = 538..540
+INFO - offset = 540  x = 14    y = 8   off = 540..542
+INFO - offset = 602  x = 13    y = 9   off = 602..604
+INFO - offset = 604  x = 14    y = 9   off = 604..606
+INFO - offset = 666  x = 13    y = 10   off = 666..668
+INFO - offset = 668  x = 14    y = 10   off = 668..670
+INFO - offset = 670  x = 15    y = 10   off = 670..672
+INFO - offset = 672  x = 16    y = 10   off = 672..674
+INFO - offset = 674  x = 17    y = 10   off = 674..676
+INFO - offset = 676  x = 18    y = 10   off = 676..678
+INFO - offset = 730  x = 13    y = 11   off = 730..732
+INFO - offset = 732  x = 14    y = 11   off = 732..734
+INFO - offset = 794  x = 13    y = 12   off = 794..796
+INFO - offset = 796  x = 14    y = 12   off = 796..798
+INFO - offset = 858  x = 13    y = 13   off = 858..860
+INFO - offset = 860  x = 14    y = 13   off = 860..862
+INFO - offset = 922  x = 13    y = 14   off = 922..924
+INFO - offset = 924  x = 14    y = 14   off = 924..926
+INFO - offset = 986  x = 13    y = 15   off = 986..988
+INFO - offset = 988  x = 14    y = 15   off = 988..990
+INFO - offset = 1050  x = 13    y = 16   off = 1050..1052
+INFO - offset = 1052  x = 14    y = 16   off = 1052..1054
+INFO - offset = 1054  x = 15    y = 16   off = 1054..1056
+INFO - offset = 1056  x = 16    y = 16   off = 1056..1058
+INFO - offset = 1058  x = 17    y = 16   off = 1058..1060
+INFO - offset = 1060  x = 18    y = 16   off = 1060..1062
+INFO - offset = 1062  x = 19    y = 16   off = 1062..1064
+INFO - offset = 1064  x = 20    y = 16   off = 1064..1066
+INFO - offset = 306  x = 25    y = 4   off = 306..308
+INFO - offset = 308  x = 26    y = 4   off = 308..310
+INFO - offset = 310  x = 27    y = 4   off = 310..312
+INFO - offset = 312  x = 28    y = 4   off = 312..314
+INFO - offset = 368  x = 24    y = 5   off = 368..370
+INFO - offset = 370  x = 25    y = 5   off = 370..372
+INFO - offset = 376  x = 28    y = 5   off = 376..378
+INFO - offset = 378  x = 29    y = 5   off = 378..380
+INFO - offset = 430  x = 23    y = 6   off = 430..432
+INFO - offset = 432  x = 24    y = 6   off = 432..434
+INFO - offset = 442  x = 29    y = 6   off = 442..444
+INFO - offset = 444  x = 30    y = 6   off = 444..446
+INFO - offset = 494  x = 23    y = 7   off = 494..496
+INFO - offset = 496  x = 24    y = 7   off = 496..498
+INFO - offset = 558  x = 23    y = 8   off = 558..560
+INFO - offset = 560  x = 24    y = 8   off = 560..562
+INFO - offset = 624  x = 24    y = 9   off = 624..626
+INFO - offset = 626  x = 25    y = 9   off = 626..628
+INFO - offset = 690  x = 25    y = 10   off = 690..692
+INFO - offset = 692  x = 26    y = 10   off = 692..694
+INFO - offset = 694  x = 27    y = 10   off = 694..696
+INFO - offset = 696  x = 28    y = 10   off = 696..698
+INFO - offset = 760  x = 28    y = 11   off = 760..762
+INFO - offset = 762  x = 29    y = 11   off = 762..764
+INFO - offset = 826  x = 29    y = 12   off = 826..828
+INFO - offset = 828  x = 30    y = 12   off = 828..830
+INFO - offset = 890  x = 29    y = 13   off = 890..892
+INFO - offset = 892  x = 30    y = 13   off = 892..894
+INFO - offset = 942  x = 23    y = 14   off = 942..944
+INFO - offset = 944  x = 24    y = 14   off = 944..946
+INFO - offset = 954  x = 29    y = 14   off = 954..956
+INFO - offset = 956  x = 30    y = 14   off = 956..958
+INFO - offset = 1008  x = 24    y = 15   off = 1008..1010
+INFO - offset = 1010  x = 25    y = 15   off = 1010..1012
+INFO - offset = 1016  x = 28    y = 15   off = 1016..1018
+INFO - offset = 1018  x = 29    y = 15   off = 1018..1020
+INFO - offset = 1074  x = 25    y = 16   off = 1074..1076
+INFO - offset = 1076  x = 26    y = 16   off = 1076..1078
+INFO - offset = 1078  x = 27    y = 16   off = 1078..1080
+INFO - offset = 1080  x = 28    y = 16   off = 1080..1082
+INFO - AREA x0=10  y0=0   x1=41   y1=39
+INFO - x0 = 10  y0 = 0  x1 = 41  y1 = 39
+INFO - set window took: 294 microseconds
+WARN - spi write took: 2 milliseconds
+INFO - graphics render: 643 milliseconds
+

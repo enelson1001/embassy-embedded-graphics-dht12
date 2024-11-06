@@ -1,0 +1,17 @@
+[target.xtensa-esp32-none-elf]
+runner = "espflash flash --monitor"
+
+
+[env]
+ESP_LOG="info"
+#EMBASSY_EXECUTOR_TASK_ARENA_SIZE="16000"
+
+[build]
+rustflags = [
+  "-C", "link-arg=-nostartfiles",
+]
+
+target = "xtensa-esp32-none-elf"
+
+[unstable]
+build-std = ["core"]

@@ -1,0 +1,59 @@
+[package]
+name = "embassy-embedded-graphics-dht12"
+version = "0.1.0"
+authors = ["Ed Nelson <ednelson5080@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+# ESP specifics
+esp-backtrace = { version = "0.14.2", features = [
+    "esp32",
+    "exception-handler",
+    "panic-handler",
+    "println",
+] }
+esp-hal = { version = "0.21.1", features = [ "esp32"] }
+esp-println = { version = "0.12.0", features = ["esp32", "log"] }
+esp-hal-embassy = { version = "0.4.0", features = [ "esp32", "executors", "integrated-timers",] }
+
+# Embassy
+embassy-executor = "0.6.0"
+embassy-sync = "0.6.0"
+embassy-time = "0.3.1"
+embassy-embedded-hal = "0.2.0"
+
+# Logging
+log = { version = "0.4.21" }
+
+# Static objects
+static_cell = "2.1.0"
+
+# Stack-Allocated String and Vec types
+heapless = { version = "0.8", default-features = false }
+
+# GUI
+embedded-graphics = "0.8.0"
+embedded-graphics-core = "0.4.0"
+
+# Hardware Abstraction Layer
+embedded-hal = "1.0.0"
+embedded-hal-bus = { version = "0.2.0", features = ["async"] }
+embedded-hal-async = "1.0.0"
+
+# Large monospaced fonts
+profont = "0.7.0"
+
+[profile.dev]
+# Rust debug is too slow.
+# For debug builds always builds with some optimization
+opt-level = "s"
+
+[profile.release]
+codegen-units = 1 # LLVM can perform better optimizations using a single thread
+debug = 2
+debug-assertions = false
+incremental = false
+lto = 'fat'
+opt-level = 's'
+overflow-checks = false
