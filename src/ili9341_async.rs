@@ -343,7 +343,7 @@ where
         self.dc.set_low().map_err(Error::from_digital)?;
         self.spi.write(&[command]).await?;
 
-        if data.len() != 0 {
+        if !data.is_empty() {
             self.dc.set_high().map_err(Error::from_digital)?;
             self.spi.write(data).await?;
         }

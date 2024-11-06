@@ -71,6 +71,9 @@ use embedded_hal_bus::spi::ExclusiveDevice;
 use crate::framebuffer::Framebuffer;
 use crate::ili9341_async::{Config, Ili9341, WritePixels};
 
+type DisplaySpi =
+    ExclusiveDevice<SpiDmaBus<'static, SPI2, FullDuplexMode, Async>, Output<'static>, Delay>;
+
 pub struct Dht12Reading {
     pub humidity: f32,
     pub temp_fahrenheit: f32,
@@ -91,12 +94,7 @@ static PIXEL_DATA: ConstStaticCell<[u8; FRAME_BUFFER_SIZE]> =
 
 #[embassy_executor::task]
 async fn render_task(
-    mut display: Ili9341<
-        ExclusiveDevice<SpiDmaBus<'static, SPI2, FullDuplexMode, Async>, Output<'static>, Delay>,
-        Output<'static>,
-        Output<'static>,
-        Output<'static>,
-    >,
+    mut display: Ili9341<DisplaySpi, Output<'static>, Output<'static>, Output<'static>>,
     receiver: Receiver<'static, NoopRawMutex, Dht12Reading, 2>,
 ) {
     let pixel_data = PIXEL_DATA.take();
@@ -337,7 +335,7 @@ async fn read_dht12_task(
         let mut temp_celsius: f32 = (data[2] & 0x7F) as f32 + (data[3] as f32) * 0.1;
 
         if (data[3] & 0x80) != 0 {
-            temp_celsius = temp_celsius * -1.0;
+            temp_celsius *= -1.0;
         }
         let temp_fahrenheit: f32 = ((temp_celsius * 9.0) / 5.0) + 32.0;
 
